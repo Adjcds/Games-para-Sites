@@ -6,11 +6,10 @@ body {
 }
 
 .container {
-    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    padding: 80px 4%;
 }
 
 .game-board {
@@ -57,6 +56,7 @@ p {
     .container {
         flex-direction: column; /* Empilhar as divs verticalmente */
         align-items: center; /* Alinhar as divs centralmente */
+        margin-top: 30px;
     }
 
     .game-board, .game-rules {
