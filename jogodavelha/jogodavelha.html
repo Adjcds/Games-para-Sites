@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Jogo da Velha</title>
+    <link rel="shortcut icon" href="assets/ico/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-rules">
+            <h2>Como jogar:</h2>
+            <p>O Jogo da Velha é um jogo de estratégia em que dois jogadores competem para preencher uma grade de 3x3 com seus símbolos, geralmente X e O.</p>
+            <p>O jogador X começa o jogo e os jogadores alternam suas jogadas.</p>
+            <p>Para vencer, um jogador deve preencher uma linha, coluna ou diagonal com seus símbolos.</p>
+            <p>Se todas as células estiverem preenchidas e nenhum jogador vencer, o jogo termina em empate.</p>
+        </div>
+        <div class="game-board">
+            <h1>Jogo da Velha</h1>
+            <div id="instructions">
+                <p>É a vez do Jogador X</p>
+            </div>
+            <table id="board">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

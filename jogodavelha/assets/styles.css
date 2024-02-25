@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-board {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.game-rules {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* Media query para dispositivos com largura menor ou igual a 600px */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Empilhar as divs verticalmente */
+        align-items: center; /* Alinhar as divs centralmente */
+    }
+
+    .game-board, .game-rules {
+        width: 80%; /* Utilizar 80% da largura da tela */
+        margin-bottom: 20px; /* Adicionar espaço entre as divs */
+    }
+}
